@@ -15,8 +15,6 @@ Example output:
 
 ### List root directory
 ```bash
-cd ..
-cd ..
 ls
 ```
 
