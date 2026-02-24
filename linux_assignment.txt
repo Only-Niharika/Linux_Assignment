@@ -1,0 +1,136 @@
+>Task 1 – Navigation & Directories
+
+ Check current directory :-  
+	
+	pwd -> /home/ubuntu
+
+ list root :- 
+
+	cd .. -> /home
+	cd .. -> /
+	ls -> to list all the directories present in root.
+	
+ go to home :-
+
+	cd /home -> /home 
+
+ create folder devops_practice :- 
+	
+	cd Desktop -> to go to Desktop
+	mkdir devops_practice ->  to create directory 
+	
+ create 3 files inside it :- 
+	
+	cd devops_practice -> open devops_practice diretory
+	touch demo.txt -> created an empty file named demo.txt
+	touch info.txt -> created an empty file named info.txt
+	touch Niharika.txt -> created an empty file named Niharika.txt
+	
+>Task 2 – File Operations 
+
+ Create logs folder :- 
+
+	mkdir logs -> created a directory named logs 
+	
+ move file1.txt into logs :- 
+	
+	touch file1.txt -> to create a file named file1.txt 
+	mv file1.txt logs/ -> to move file1.txt to logs folder 
+	
+ rename file2.txt to config.txt :-
+	
+	touch file2.txt -> to create a file named file2.txt 
+	mv file2.txt config.txt -> to rename file named file2.txt as config.txt 
+	
+ copy file3.txt to backup.txt :-
+	
+	touch file3.txt -> to create a file name file3.txt
+	nano file3.txt -> to write content in fil3.txt
+	cp file3.txt backup.txt -> to copy the content of file3.txt to backup.txt 
+	
+ delete logs folder :-
+
+	rm -r logs -> to delete directory logs
+	
+>Task 3 – File Content
+
+ Write sample text in config.txt :-
+ 
+	nano config.txt -> to write content in config.txt 
+
+ display content :-
+	
+	cat config.txt -> to show the content written in config.txt
+	
+ show first and last line :-
+ 
+	head -n 1 config.txt ->  to display the first line of content written in config.txt
+	tail -n 1 config.txt -> to display the last line of content written in config.txt
+	
+>Task 4 – Permissions
+
+ Check permissions of config.txt :-
+	
+	ls -l config.txt  -> gets the detail of file along with its permissions 
+	
+ allow only owner read & write :- 
+	
+	chmod 600 config.txt -> to change the permissions of file to owner only read and write.
+	
+>Task 5 – Search & Find
+ 
+ Search word 'DevOps' :-
+	
+	grep -r -i devops -> to search devops insensitive and recursively in all files.
+ 
+ locate config.txt in system :-
+
+	sudo find /home -name config.txt -> to search config.txt in whole home directory.
+ 
+>Task 6 – System Info 
+ 
+ Check username :-
+	
+	whoami -> to check the usename 
+	
+ hostname :-
+	
+	hostname -> to check the hostname of system 
+	
+ running processes :-
+	
+	ps -> to check the currently running processes
+	
+ disk usage :-
+ 
+	df -h ->  to check disk usage 
+	
+ memory usage :- 
+  
+	free -> to check memory usage 
+	
+>Task 7 – Archive & Compress
+
+ Create tar archive of devops_practice :-
+	
+	tar -cvf devops_practice.tar devops_practice -> created tar of devops_practice
+	
+ compress and extract it :-
+
+	gzip devops_practice.tar -> to compress 
+	tar -xvzf devops_practice.tar.gz -> to extract
+	
+>Task 8 – Networking 
+
+ Find IP address :-
+	
+	ifconfig  
+	
+ ping google (5 packets) :-
+ 
+	ping 5 google.com 
+	
+ check DNS resolution :-
+ 
+	dig google.com 
+
