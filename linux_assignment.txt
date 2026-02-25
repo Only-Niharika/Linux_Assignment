@@ -118,7 +118,7 @@
  compress and extract it :-
 
 	gzip devops_practice.tar -> to compress 
-	tar -xvzf devops_practice.tar.gz -> to extract
+	tar -xvzf devops_practice.tar.gz -> to extract the archive file
 	
 >Task 8 – Networking 
 
